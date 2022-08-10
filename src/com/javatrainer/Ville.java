@@ -1,5 +1,7 @@
 package com.javatrainer;
 
+import java.util.Objects;
+
 public class Ville {
    protected String nomVille;
   protected    String nomPays;
@@ -19,6 +21,10 @@ public class Ville {
 
     public Ville() {
 
+    }
+
+    public int hashCode(){
+        return Objects.hash(categorie, nbHabitants, nomPays, nomVille);
     }
 
     public String getNomVille() {
@@ -80,7 +86,7 @@ public class Ville {
                 "nomVille='" + nomVille + '\'' +
                 ", nomPays='" + nomPays + '\'' +
                 ", nbHabitants=" + nbHabitants +
-                ", categorie=" + this.categorie +
+                ", categorie=" + categorie +
                 '}';
     }
 }
