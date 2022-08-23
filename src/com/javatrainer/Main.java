@@ -22,12 +22,18 @@ public class Main {
 //
 //        System.out.println("***********************************");
 
-        Lion lion = new Lion(4,"verte");
-        lion.crier();
-        lion.deplacement();
-        lion.manger();
-        lion.boire();
-        System.out.println(lion.toString());
+       Chien chien = new Chien(20,"BLANCHE" );
+       chien.faireCalin();
+       chien.boire();
+       chien.manger();
+       chien.faireLechouille();
+       chien.faiteLeBeau();
+       chien.crier();
+        System.out.println(chien.toString());
+
+        System.out.println("--------------------------------");
+
+
 
 
 
