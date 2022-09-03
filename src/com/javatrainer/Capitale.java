@@ -4,7 +4,7 @@ package com.javatrainer;
 public class Capitale extends Ville {
     private String monument;
 
-    public Capitale(String nomVille, String nomPays, int nbHabitants, String monument) {
+    public Capitale(String nomVille, String nomPays, int nbHabitants, String monument) throws NombreHabitantException {
         super(nomVille, nomPays, nbHabitants);
         this.monument = monument;
     }

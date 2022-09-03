@@ -22,17 +22,34 @@ public class Main {
 //
 //        System.out.println("***********************************");
 
-       Chien chien = new Chien(20,"BLANCHE" );
-       chien.faireCalin();
-       chien.boire();
-       chien.manger();
-       chien.faireLechouille();
-       chien.faiteLeBeau();
-       chien.crier();
-        System.out.println(chien.toString());
+//       Chien chien = new Chien(20,"BLANCHE" );
+//       chien.faireCalin();
+//       chien.boire();
+//       chien.manger();
+//       chien.faireLechouille();
+//       chien.faiteLeBeau();
+//       chien.crier();
+//        System.out.println(chien.toString());
+//
+//        System.out.println("--------------------------------");
+//        Felin f = new Chat(23,"rouge");
+//        System.out.println(f);
 
-        System.out.println("--------------------------------");
 
+//        try {
+//            Ville ville =new Ville("lushi","rdc",-1200);
+//            System.out.println(ville);
+//        }catch (NombreHabitantException e){
+//
+//        }
+
+    for (Langage langage : Langage.values()){
+        if (Langage.JAVA.equals(langage)){
+            System.out.println("j'aime le : "+ langage);
+        }else {
+            System.out.println(langage);
+        }
+    }
 
 
 

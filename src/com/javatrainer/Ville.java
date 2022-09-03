@@ -8,12 +8,21 @@ public class Ville {
   protected    int nbHabitants;
   protected char categorie;
 
-    public Ville(String nomVille, String nomPays, int nbHabitants) {
-        this.nomVille = nomVille;
-        this.nomPays = nomPays;
-        this.nbHabitants = nbHabitants;
-        this.setCategorie();
-    }
+    public Ville(String nomVille, String nomPays, int nbHabitants) throws NombreHabitantException {
+
+            if (nbHabitants < 0){
+                throw new NombreHabitantException();
+            }else {
+                this.nomVille = nomVille;
+                this.nomPays = nomPays;
+                this.nbHabitants = nbHabitants;
+                this.setCategorie();
+
+            }
+        }
+
+
+
 
     private char setCategorie() {
         return 0;
